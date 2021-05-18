@@ -61,14 +61,6 @@ p {
   padding-right: 15px;
 }
 
-.white-color {
-  background-color: var(--secondary-back-color);
-}
-
-.black-color {
-  background-color: var(--main-back-color);
-}
-
 .icon {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -96,15 +88,16 @@ p {
 
 .header {
   border: 1px solid #ececec;
-
-  display: flex;
 }
 
 .list {
   display: flex;
 
-  justify-content: space-between;
   align-items: center;
+}
+
+.list-img {
+  justify-content: space-between;
 }
 
 .list-nav {
@@ -113,6 +106,8 @@ p {
 
 .list-address {
   display: flex;
+
+  margin-left: auto;
 }
 
 .link {
@@ -120,9 +115,6 @@ p {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .list-nav .link + .link {
@@ -131,6 +123,11 @@ p {
 
 .list-address .link + .link {
   margin-left: 50px;
+}
+
+.link-area {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-nav {
@@ -193,6 +190,9 @@ p {
 
 .section {
   padding-top: 94px;
+}
+
+.section:last-child {
   padding-bottom: 94px;
 }
 
@@ -217,8 +217,12 @@ p {
   margin-bottom: 10px;
 }
 
-.list-about {
+.item-about {
   width: 270px;
+}
+
+.item-about:not(:first-child) {
+  margin-left: 30px;
 }
 
 .text-main {
@@ -305,7 +309,7 @@ p {
   cursor: pointer;
 
   margin-right: 8px;
-
+  padding: 6px 22px;
   border: transparent;
   border-radius: 4px;
 }
